@@ -59,6 +59,7 @@
             // 
             // btn0
             // 
+            this.btn0.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn0.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn0.Location = new System.Drawing.Point(111, 630);
@@ -66,11 +67,12 @@
             this.btn0.Size = new System.Drawing.Size(104, 90);
             this.btn0.TabIndex = 1;
             this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnDs
             // 
+            this.btnDs.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDs.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDs.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnDs.Location = new System.Drawing.Point(218, 630);
@@ -78,11 +80,12 @@
             this.btnDs.Size = new System.Drawing.Size(104, 90);
             this.btnDs.TabIndex = 2;
             this.btnDs.Text = ".";
-            this.btnDs.UseVisualStyleBackColor = true;
+            this.btnDs.UseVisualStyleBackColor = false;
             this.btnDs.Click += new System.EventHandler(this.btnDs_Click);
             // 
             // btnPm
             // 
+            this.btnPm.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnPm.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPm.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnPm.Location = new System.Drawing.Point(4, 630);
@@ -90,10 +93,12 @@
             this.btnPm.Size = new System.Drawing.Size(104, 90);
             this.btnPm.TabIndex = 3;
             this.btnPm.Text = "+/-";
-            this.btnPm.UseVisualStyleBackColor = true;
+            this.btnPm.UseVisualStyleBackColor = false;
+            this.btnPm.Click += new System.EventHandler(this.btnPm_Click);
             // 
             // btnEquals
             // 
+            this.btnEquals.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnEquals.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEquals.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnEquals.Location = new System.Drawing.Point(325, 630);
@@ -101,11 +106,12 @@
             this.btnEquals.Size = new System.Drawing.Size(104, 90);
             this.btnEquals.TabIndex = 4;
             this.btnEquals.Text = "=";
-            this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.UseVisualStyleBackColor = false;
             this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btnPlus
             // 
+            this.btnPlus.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnPlus.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlus.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnPlus.Location = new System.Drawing.Point(325, 534);
@@ -113,11 +119,12 @@
             this.btnPlus.Size = new System.Drawing.Size(104, 90);
             this.btnPlus.TabIndex = 8;
             this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.UseVisualStyleBackColor = false;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btn1
             // 
+            this.btn1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn1.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn1.Location = new System.Drawing.Point(4, 534);
@@ -125,11 +132,12 @@
             this.btn1.Size = new System.Drawing.Size(104, 90);
             this.btn1.TabIndex = 7;
             this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn3
             // 
+            this.btn3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn3.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn3.Location = new System.Drawing.Point(218, 534);
@@ -137,11 +145,12 @@
             this.btn3.Size = new System.Drawing.Size(104, 90);
             this.btn3.TabIndex = 6;
             this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
+            this.btn2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn2.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn2.Location = new System.Drawing.Point(111, 534);
@@ -149,11 +158,12 @@
             this.btn2.Size = new System.Drawing.Size(104, 90);
             this.btn2.TabIndex = 5;
             this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btnMinus
             // 
+            this.btnMinus.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinus.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinus.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnMinus.Location = new System.Drawing.Point(325, 438);
@@ -161,11 +171,12 @@
             this.btnMinus.Size = new System.Drawing.Size(104, 90);
             this.btnMinus.TabIndex = 12;
             this.btnMinus.Text = "-";
-            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.UseVisualStyleBackColor = false;
             this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btn4
             // 
+            this.btn4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn4.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn4.Location = new System.Drawing.Point(4, 438);
@@ -173,11 +184,12 @@
             this.btn4.Size = new System.Drawing.Size(104, 90);
             this.btn4.TabIndex = 11;
             this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn6
             // 
+            this.btn6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn6.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn6.Location = new System.Drawing.Point(218, 438);
@@ -185,11 +197,12 @@
             this.btn6.Size = new System.Drawing.Size(104, 90);
             this.btn6.TabIndex = 10;
             this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
+            this.btn5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn5.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn5.Location = new System.Drawing.Point(111, 438);
@@ -197,11 +210,12 @@
             this.btn5.Size = new System.Drawing.Size(104, 90);
             this.btn5.TabIndex = 9;
             this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btnMult
             // 
+            this.btnMult.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMult.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMult.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnMult.Location = new System.Drawing.Point(325, 342);
@@ -209,11 +223,12 @@
             this.btnMult.Size = new System.Drawing.Size(104, 90);
             this.btnMult.TabIndex = 16;
             this.btnMult.Text = "x";
-            this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.UseVisualStyleBackColor = false;
             this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
             // 
             // btn7
             // 
+            this.btn7.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn7.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn7.Location = new System.Drawing.Point(4, 342);
@@ -221,11 +236,12 @@
             this.btn7.Size = new System.Drawing.Size(104, 90);
             this.btn7.TabIndex = 15;
             this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn9
             // 
+            this.btn9.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn9.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn9.Location = new System.Drawing.Point(218, 342);
@@ -233,11 +249,12 @@
             this.btn9.Size = new System.Drawing.Size(104, 90);
             this.btn9.TabIndex = 14;
             this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn8
             // 
+            this.btn8.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn8.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btn8.Location = new System.Drawing.Point(111, 342);
@@ -245,11 +262,12 @@
             this.btn8.Size = new System.Drawing.Size(104, 90);
             this.btn8.TabIndex = 13;
             this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btnDivision
             // 
+            this.btnDivision.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnDivision.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDivision.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnDivision.Location = new System.Drawing.Point(325, 246);
@@ -257,11 +275,12 @@
             this.btnDivision.Size = new System.Drawing.Size(104, 90);
             this.btnDivision.TabIndex = 20;
             this.btnDivision.Text = "÷";
-            this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.UseVisualStyleBackColor = false;
             this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // btnToFraction
             // 
+            this.btnToFraction.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnToFraction.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToFraction.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnToFraction.Location = new System.Drawing.Point(4, 246);
@@ -269,10 +288,12 @@
             this.btnToFraction.Size = new System.Drawing.Size(104, 90);
             this.btnToFraction.TabIndex = 19;
             this.btnToFraction.Text = "1/x";
-            this.btnToFraction.UseVisualStyleBackColor = true;
+            this.btnToFraction.UseVisualStyleBackColor = false;
+            this.btnToFraction.Click += new System.EventHandler(this.btnToFraction_Click);
             // 
             // btnSqrt
             // 
+            this.btnSqrt.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnSqrt.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSqrt.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnSqrt.Location = new System.Drawing.Point(218, 246);
@@ -280,21 +301,25 @@
             this.btnSqrt.Size = new System.Drawing.Size(104, 90);
             this.btnSqrt.TabIndex = 18;
             this.btnSqrt.Text = " √x";
-            this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.UseVisualStyleBackColor = false;
+            this.btnSqrt.Click += new System.EventHandler(this.btnSqrt_Click);
             // 
             // btnPwr
             // 
+            this.btnPwr.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnPwr.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPwr.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnPwr.Location = new System.Drawing.Point(111, 246);
             this.btnPwr.Name = "btnPwr";
             this.btnPwr.Size = new System.Drawing.Size(104, 90);
             this.btnPwr.TabIndex = 17;
-            this.btnPwr.Text = "x²";
-            this.btnPwr.UseVisualStyleBackColor = true;
+            this.btnPwr.Text = "x^y";
+            this.btnPwr.UseVisualStyleBackColor = false;
+            this.btnPwr.Click += new System.EventHandler(this.btnPwr_Click);
             // 
             // BtnRemove
             // 
+            this.BtnRemove.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BtnRemove.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRemove.ForeColor = System.Drawing.SystemColors.Desktop;
             this.BtnRemove.Location = new System.Drawing.Point(325, 150);
@@ -302,11 +327,12 @@
             this.BtnRemove.Size = new System.Drawing.Size(104, 90);
             this.BtnRemove.TabIndex = 24;
             this.BtnRemove.Text = "⌫";
-            this.BtnRemove.UseVisualStyleBackColor = true;
+            this.BtnRemove.UseVisualStyleBackColor = false;
             this.BtnRemove.Click += new System.EventHandler(this.BtnRemove_Click);
             // 
             // btnPrcnt
             // 
+            this.btnPrcnt.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnPrcnt.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrcnt.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnPrcnt.Location = new System.Drawing.Point(4, 150);
@@ -314,10 +340,12 @@
             this.btnPrcnt.Size = new System.Drawing.Size(104, 90);
             this.btnPrcnt.TabIndex = 23;
             this.btnPrcnt.Text = "%";
-            this.btnPrcnt.UseVisualStyleBackColor = true;
+            this.btnPrcnt.UseVisualStyleBackColor = false;
+            this.btnPrcnt.Click += new System.EventHandler(this.btnPrcnt_Click);
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnClear.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnClear.Location = new System.Drawing.Point(218, 150);
@@ -325,11 +353,12 @@
             this.btnClear.Size = new System.Drawing.Size(104, 90);
             this.btnClear.TabIndex = 22;
             this.btnClear.Text = "C";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCancelEntry
             // 
+            this.btnCancelEntry.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCancelEntry.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelEntry.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnCancelEntry.Location = new System.Drawing.Point(111, 150);
@@ -337,7 +366,7 @@
             this.btnCancelEntry.Size = new System.Drawing.Size(104, 90);
             this.btnCancelEntry.TabIndex = 21;
             this.btnCancelEntry.Text = "CE";
-            this.btnCancelEntry.UseVisualStyleBackColor = true;
+            this.btnCancelEntry.UseVisualStyleBackColor = false;
             this.btnCancelEntry.Click += new System.EventHandler(this.btnCancelEntry_Click);
             // 
             // operationTextBox

@@ -16,6 +16,7 @@ namespace Calculator
 
         double result;
         double result2;
+        bool erase = false;
 
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -36,10 +37,17 @@ namespace Calculator
 
         private void btn1_Click(object sender, EventArgs e)
         {
-
             if (label.Text == "0")
             {
-                label.Text = btn1.Text;
+                if(erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn1.Text;
+                }
+                else
+                {
+                    label.Text = btn1.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
@@ -59,7 +67,15 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn2.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn2.Text;
+                }
+                else
+                {
+                    label.Text = btn2.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
@@ -79,7 +95,15 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn3.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn3.Text;
+                }
+                else
+                {
+                    label.Text = btn3.Text;
+                }
             }
             else if(label.Text.Length < 16)
             {
@@ -99,7 +123,15 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn4.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn4.Text;
+                }
+                else
+                {
+                    label.Text = btn4.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
@@ -119,10 +151,19 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn5.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn5.Text;
+                }
+                else
+                {
+                    label.Text = btn5.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
+
                 if (label.Text == result2.ToString())
                 {
                     operationTextBox.Text = string.Empty;
@@ -139,10 +180,19 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn6.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn6.Text;
+                }
+                else
+                {
+                    label.Text = btn6.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
+
                 if (label.Text == result2.ToString())
                 {
                     operationTextBox.Text = string.Empty;
@@ -159,10 +209,19 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn7.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn7.Text;
+                }
+                else
+                {
+                    label.Text = btn7.Text;
+                }
             }
             else if(label.Text.Length < 16)
             {
+
                 if (label.Text == result2.ToString())
                 {
                     operationTextBox.Text = string.Empty;
@@ -179,10 +238,19 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn8.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn8.Text;
+                }
+                else
+                {
+                    label.Text = btn8.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
+
                 if (label.Text == result2.ToString())
                 {
                     operationTextBox.Text = string.Empty;
@@ -199,10 +267,19 @@ namespace Calculator
         {
             if (label.Text == "0")
             {
-                label.Text = btn9.Text;
+                if (erase == true)
+                {
+                    operationTextBox.Text = string.Empty;
+                    label.Text = btn9.Text;
+                }
+                else
+                {
+                    label.Text = btn9.Text;
+                }
             }
             else if (label.Text.Length < 16)
             {
+
                 if (label.Text == result2.ToString())
                 {
                     operationTextBox.Text = string.Empty;
@@ -473,18 +550,62 @@ namespace Calculator
             {
                 case "+":
                     result2 = double.Parse(numberTextBox[0]) + double.Parse(label.Text);
+                    if(result2 == 0)
+                    {
+                        erase = true;
+                    }
+                    else
+                    {
+                        erase= false;
+                    }
                     label.Text = result2.ToString(CultureInfo.InvariantCulture);
                     break;
                 case "-":
-                    result2 = double.Parse(numberTextBox[0]) + double.Parse(label.Text);
+                    result2 = double.Parse(numberTextBox[0]) - double.Parse(label.Text);
+                    if (result2 == 0)
+                    {
+                        erase = true;
+                    }
+                    else
+                    {
+                        erase = false;
+                    }
                     label.Text = result2.ToString(CultureInfo.InvariantCulture);
                     break;
                 case "x":
-                    result2 = double.Parse(numberTextBox[0]) + double.Parse(label.Text);
+                    result2 = double.Parse(numberTextBox[0]) * double.Parse(label.Text);
+                    if (result2 == 0)
+                    {
+                        erase = true;
+                    }
+                    else
+                    {
+                        erase = false;
+                    }
                     label.Text = result2.ToString(CultureInfo.InvariantCulture);
                     break;
                 case "÷":
-                    result2 = double.Parse(numberTextBox[0]) + double.Parse(label.Text);
+                    result2 = double.Parse(numberTextBox[0]) / double.Parse(label.Text);
+                    if (result2 == 0)
+                    {
+                        erase = true;
+                    }
+                    else
+                    {
+                        erase = false;
+                    }
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                    break;
+                case "^":
+                    result2 = Math.Pow(double.Parse(numberTextBox[0]), double.Parse(label.Text));
+                    if (result2 == 0)
+                    {
+                        erase = true;
+                    }
+                    else
+                    {
+                        erase = false;
+                    }
                     label.Text = result2.ToString(CultureInfo.InvariantCulture);
                     break;
             }
@@ -501,6 +622,102 @@ namespace Calculator
             {
                 label.Text += ".";
             }
+        }
+
+        private void btnPm_Click(object sender, EventArgs e)
+        {
+            if(!label.Text.Contains("-") && label.Text != "0")
+            {
+                label.Text = '-'+label.Text;
+            }
+            else if(label.Text.Contains("-") && label.Text != "0")
+            {
+                label.Text = label.Text.Remove(0,1);
+            }
+        }
+
+        private void btnPwr_Click(object sender, EventArgs e)
+        {
+            if(operationTextBox.Text == string.Empty)
+            {
+                operationTextBox.Text = label.Text + " ^ ";
+                label.Text = "0";
+            }
+            else
+            {
+                operationTextBox.Text += label.Text;
+            }
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+           if(operationTextBox.Text == string.Empty)
+            {
+                operationTextBox.Text = $"√({label.Text})";
+                result2 = Math.Sqrt(double.Parse(label.Text));
+                if (result2 == 0)
+                {
+                    erase = true;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+                else
+                {
+                    erase = false;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+            }
+            else
+            {
+                operationTextBox.Text += $"√({label.Text})";
+            }
+        }
+
+        private void btnToFraction_Click(object sender, EventArgs e)
+        {
+            if(operationTextBox.Text == string.Empty)
+            {
+                operationTextBox.Text = $"1/({label.Text})";
+                result2 = 1 / double.Parse(label.Text);
+                if (result2 == 0)
+                {
+                    erase = true;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+                else
+                {
+                    erase = false;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+            }
+            else
+            {
+                operationTextBox.Text += $"1/({label.Text})";
+            }
+        }
+
+        private void btnPrcnt_Click(object sender, EventArgs e)
+        {
+            if (operationTextBox.Text == string.Empty)
+            {
+                operationTextBox.Text = $"{label.Text}%";
+                result2 = double.Parse(label.Text) / 100;
+                if (result2 == 0)
+                {
+                    erase = true;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+                else
+                {
+                    erase = false;
+                    label.Text = result2.ToString(CultureInfo.InvariantCulture);
+                }
+            }
+            else
+            {
+                operationTextBox.Text += $"{label.Text}% =";
+            }
+
+            
         }
     }
 }
